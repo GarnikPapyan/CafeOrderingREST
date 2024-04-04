@@ -4,12 +4,17 @@ package org.example.cafe.cafeorderingsystem.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 @Entity
 @Table(name = "billing")
-
+@Data
+@Builder
+@AllArgsConstructor
 public class Billing {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
